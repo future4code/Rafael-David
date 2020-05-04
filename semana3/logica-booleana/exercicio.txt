@@ -1,0 +1,91 @@
+*** Exercicios 01 ***
+
+01° Leia o código abaixo. Indique todas as mensagens impressas no console.
+
+
+const bool1 = true
+const bool2 = false
+const bool3 = !bool2
+
+let resultado = bool1 && bool2 && bool3
+console.log("a. ", resultado)
+
+resultado = (bool2 || bool1) && !bool3
+console.log("b. ", resultado)
+
+resultado = !resultado && (bool1 || bool1)
+console.log("c. ", resultado)
+
+resultado = (resultado && (!bool1 || bool2)) && !bool3
+console.log("d. ", resultado)
+
+console.log("e. ", typeof resultado)
+
+
+R:
+
+a.  false
+b.  false
+c.  true
+d.  false
+e. boolean
+
+--------------------------
+
+02° Leia o código abaixo.
+
+
+let array
+console.log('I. ', array)
+
+array = null
+console.log('II. ', array)
+
+
+array = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+console.log('III. ', array.length)
+
+let i = 0
+console.log('IV. ', array[i], " e ", array[i+1])
+
+array[i+1] = 19
+const valor = array[i+6]
+console.log('V. ', array[i+1], " e ", valor)
+
+i+=1
+array[i] = array[i-1]
+console.log('VI. ', array[i])
+
+i = array.length - 1
+array[i] = array[i-3]
+const resultadoC = array[i]%array[1]
+console.log('VII. ', resultadoC)
+
+
+
+R:
+I. undefined
+II. null
+III. 11
+IV. 3 e 4
+V. 19 e 9
+VI. 3
+VII. 1
+
+--------------------------
+
+1° O que é array e como se declara em JS?
+
+R: Arrays são multivariaveis e são declaras assim: let array = []
+
+2° Qual o index inicial de um array?
+
+R: Array começam com índice zero: o primeiro elemento de um array está na posição 0 e o último elemento está na posição equivalente ao valor da propriedade length (tamanho) menos 1
+
+3° Como se determinar o tamanho do array
+
+R: Para determinar um tamanho de uma array usamos a propriedade length
+
+4° Indique todas as mensagens impressas no console
+
+R: Não entendi
